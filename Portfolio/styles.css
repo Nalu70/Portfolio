@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.252);
+  flex-wrap: nowrap;
+  padding: 10px 0px;
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.navbar h1 {
+  padding-left: 10%;
+  font-size: 2rem;
+  margin-right: auto;
+  font-weight: 900;
+}
+.navbar nav {
+  width: 50%;
+  overflow-x: auto;
+  flex-shrink: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.navbar nav::-webkit-scrollbar {
+  display: none;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar li {
+  display: inline;
+  padding: 10px;
+  margin-right: 5%;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.navbar img {
+  height: 40px;
+}
+.navbar a {
+  position: relative;
+}
+.navbar a::after {
+  position: absolute;
+  content: "";
+  font-weight: 600;
+  background-color: black;
+  height: 3px;
+  width: 0px;
+  bottom: -2px;
+  left: 50%;
+}
+.navbar a::before {
+  position: absolute;
+  content: "";
+  font-weight: 600;
+  background-color: black;
+  height: 3px;
+  width: 0px;
+  bottom: -2px;
+  right: 50%;
+}
+.navbar a:hover::after,
+.navbar a:hover::before {
+  width: 50%;
+  transition: width 0.3s ease;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+main .content {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  max-width: 30%;
+}
+main .content button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+main .content button:hover {
+  color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: linear-gradient(45deg, #c83056, #ff00ff, #7928ca, #6f90e3);
+  transform: scale(1.05);
+  font-weight: 900;
+}
+.content button:hover svg {
+  transform: rotate(360deg) scale(1.2);
+  transition: transform 1s ease-in-out;
+
+}
+main .content p span {
+  background: linear-gradient(45deg, #c83056, #ff00ff, #7928ca, #6f90e3);
+  color: transparent;
+  background-clip: text;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.about img {
+  width: 30%;
+}
+.about .about-text {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.252);
+  border-radius: 50px 0;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.8);
+}
+.about .about-text h1 {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about-text p {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+}
+footer {
+  background-color: black;
+  border-top: 2px solid rgba(255, 255, 255, 0.252);
+}
+footer div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+footer div a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#whatsapp:hover {
+  color: rgb(85, 186, 85);
+}
+#mail:hover {
+  color: rgb(232, 76, 76);
+}
+#year {
+  color: white;
+  font-weight: 600;
+}
+#call:hover,
+#linkedin:hover {
+  color: rgb(0, 183, 255);
+}
+#git:hover {
+  color: grey;
+}
+footer div a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  img {
+    rotate: -10deg;
+  }
+}
+
+.skills {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.skills .card {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+.skills .card:nth-child(1) {
+  left: 30%;
+  z-index: 1;
+}
+.skills .card:nth-child(2) {
+  left: calc(30% + 100px);
+  z-index: 2;
+}
+.skills .card:nth-child(3) {
+  left: calc(30% + 200px);
+  z-index: 3;
+}
+.skills .card:nth-child(4) {
+  left: calc(30% + 300px);
+  z-index: 4;
+}
+.skills .card:nth-child(odd) {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 3px solid white;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.8);
+  h2 {
+    text-shadow: 2px 2px 5px white;
+  }
+  a {
+    color: white;
+  }
+}
+.skills .card:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgba(0, 0, 0);
+  box-shadow: 15px 15px 25px rgba(255, 255, 255, 0.8);
+  color: black;
+  h2 {
+    text-shadow: 2px 2px 5px #999;
+  }
+}
+.card:hover {
+  animation: slide 2s ease-in-out forwards;
+}
+@keyframes slide {
+  0% {
+    z-index: 10;
+    transform: translate(0, 0);
+  }
+  50% {
+    z-index: 10;
+    transform: translate(-50%, 0) scale(1.25) rotateZ(-10deg);
+  }
+  100% {
+    z-index: 10;
+    left: calc(30% + 150px);
+    transform: translate(0, 0) scale(1.5) rotateZ(0deg);
+  }
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.card-img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  img {
+    margin: 10px;
+  }
+}
+.skills {
+  h2 {
+    font-size: 26px;
+    text-align: center;
+    margin: 10px;
+  }
+}
+.card-img a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.card-img a:hover {
+  transform: scale(1.05) translate(0, -10%);
+}
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+.resume {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 400px;
+  font-weight: 600;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.resume img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transform: scale(1.3);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.res {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+i {
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+i::after {
+  content: "View Resume";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  transform: translateX(-50%);
+}
+.res:hover {
+  transform: rotateY(180deg);
+}
+.res:hover img {
+  opacity: 0.1;
+  transform: scale(1.1);
+}
+.res:hover i {
+  opacity: 1;
+  pointer-events: auto;
+}
+i:hover {
+  transform: scale(1.1) translate(-50%, -50%);
+}
+.resume-container button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+  position: relative;
+  left: -350px;
+}
+.resume-container button:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.resume-container button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+.resume-container a {
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-bottom: 120px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri ram kumar routhu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <h1><img src="images\letter-s.png" />ri ram</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Certifications</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main >
+      <div class="content" data-aos="zoom-in-down">
+        <p>Hi There,</p>
+        <p>I'm Sriram kumar</p>
+        <p>I am into <span>Web Development</span></p>
+        <button onclick="location.href='#about'">About me &nbsp;<svg width="30" height="30" viewBox="0 0 24 24" style="background: white; border-radius: 50%; padding: 5px;">
+        <path d="M12 5v14M5 12l7 7 7-7" stroke="blue" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></p></button>
+      </div>
+      <img data-aos="fade-left"  src="images\chintu1.png" alt="Sriram Kumar" />
+    </main>
+
+    <div class="about" id="about">
+      <img data-aos="fade-right" src="images\about1.png" alt="About Me" />
+      <div data-aos="flip-right" class="about-text">
+        <h1 style="text-align: center;"><u>About me</u></h1>
+        <p style="text-align: justify;line-height: 50px;">
+          I am a passionate web developer with a keen interest in creating
+          dynamic and responsive web applications. I love to explore new
+          technologies and continuously improve my skills.
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="skill" id="skill">
+      <h1 data-aos="fade-up" style="font-size: 50px;"><u>Skills</u></h1>
+        <div class="skills" >
+               <div class="card" data-aos="fade-right"><h2>Languages</h2>
+                    <div class="card-img">
+                      <a href="#!" target="_blank"><img src="images\c.png" alt="C language" width="60px" height="60px">C</a>
+                      <a href="#!" target="_blank"><img src="images\c++.png" alt="Java script" width="60px" height="60px">C++</a>
+                      <a href="#!" target="_blank"><img src="images\python.png" alt="Java script" width="60px" height="60px">Python</a>
+                      <a href="#!" target="_blank"><img src="images\java.png" alt="Java script" width="60px" height="60px">Java</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-left"><h2>Problem Solving</h2>
+                    <div class="card-img">
+                      <a href="https://leetcode.com/u/SriRamBalu/" target="_blank"><img src="images\leetcode.png" alt="Leetcode" width="60px" height="60px">Leetcode</a>
+                      <a href="https://www.geeksforgeeks.org/user/sriramby5jk/" target="_blank"><img src="images\gfg.png" alt="Java script" width="60px" height="60px">Geeks for Geeks</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-right"><h2>Frameworks</h2>
+                      <div class="card-img">
+                      <a href="#!" target="_blank"><img src="images\react.png" alt="React" width="60px" height="60px">React</a>
+                      <a href="#!" target="_blank"><img src="images\node.png" alt="Node js" width="60px" height="60px">Node js</a>
+                      <a href="#!" target="_blank"><img src="images\mongo.png" alt="Mongo db" width="60px" height="60px">Mongo db</a>
+                </div>
+                </div>
+                <div class="card" data-aos="fade-left"><h2>Web development</h2>
+                  <div class="card-img">
+                      <a href="#!" target="_blank"><img src="images\html2.png" alt="HTML" width="80px" height="60px">HTML</a>
+                      <a href="#!" target="_blank"><img src="images\css.png" alt="CSS" width="60px" height="60px">CSS</a>
+                      <a href="#!" target="_blank"><img src="images\js.png" alt="Java script" width="60px" height="60px">JavaScript</a>
+                  </div>
+                </div> 
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" class="resume-container" id="resume">
+      <h1 style="font-size: 120px;">Resume</h1><br>
+      <a href="Sri ram kumar routhu - Resume.pdf" target="_blank"><button>preview</button></a>
+      <a href="Sri ram kumar routhu - Resume.pdf" download="Sriram's - resume"><button>Download</button></a>
+      <div data-aos="flip-left" class="res">
+          <div class="resume"><img src="images\resume2.png"></div>
+          <i class="far fa-eye"></i>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector('.res').addEventListener('click', function() {
+        window.open('Sri ram kumar routhu - Resume.pdf', '_blank');
+      });
+
+      document.querySelector('.res i').addEventListener('click', function() {
+        window.open('Sri ram kumar routhu - Resume.pdf', '_blank');
+      });
+    </script>
+
+    <footer id="contact">
+      <div>
+        <h1 style="color:rgb(255, 255, 255);text-align:center;text-shadow: 5px 5px 10px #fff;">Let us work together : </h1>
+        <a href="mailto:srirambalu526@gmail.com" id="mail" target="_blank"><img src="socialMediaIcons\mail1.png"  alt="mail" width="40px">Mail</a>
+        <a href="tel:+919381318036" id="call" target="_blank"><img src="socialMediaIcons\call2.png" alt="call" width="40px">Call</a>
+        <a href="https://github.com/Nalu70" id="git" target="_blank"><img src="socialMediaIcons\git.png" style="background-color:white;border-radius:50%;" alt="github" width="40px">Github</a>
+        <a href="https://www.linkedin.com/in/sri-ram-kumar-routhu-b79aa12b7" id="linkedin" target="_blank"><img src="socialMediaIcons\linkedin.png" alt="linked in" width="40px">Linkedin</a>
+        <a href="https://wa.me/919381318036" id="whatsapp" target="_blank"><img src="socialMediaIcons\whatsapp.png" alt="whatsapp" width="40px">Whatsapp</a>
+      </div>
+      <div>
+        <p style="color:#999">&copy; <span id="year" style="color:inherit"></span> Sriram Kumar. All rights reserved.</p>
+        <p style="color:#999;">Designed by Sriram Kumar</p>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: false, // whether animation should happen only once - while scrolling down
+      });
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+  </body>
+</html>
